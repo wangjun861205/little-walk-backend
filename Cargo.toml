@@ -1,0 +1,36 @@
+[package]
+name = "little-walk"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.4.1"
+auth-service = { git = "https://github.com/wangjun861205/auth-service.git" }
+dotenv = "0.15.0"
+hmac = "0.12.1"
+jwt = "0.16.0"
+nb-from-env = "0.2.1"
+# redis = { version = "0.24.0", features = ["tokio-comp"] }
+reqwest = "0.11.22"
+sha2 = "0.10.8"
+sqlx = { version = "0.7.2", features = ["postgres"] }
+tokio = { version = "1.32.0", features = ["rt-multi-thread"] }
+actix-form-data = "0.6.2"
+actix-multipart = "0.6.1"
+upload-service = { git = "https://github.com/wangjun861205/upload-service.git" }
+anyhow = "1.0.75"
+bytes = "1.5.0"
+
+chrono = { version = "0.4.31", features = ["serde"] }
+surrealdb = "1.0.0"
+nb-serde-query = { version = "0.3.3", features = ["actix-web"] }
+
+futures = "0.3.29"
+mongodb = { version = "2.7.1", features = ["bson-chrono-0_4"] }
+serde = { version = "1.0.193", features = ["derive"] }
+nb-field-names = "*"
+env_logger = "0.10.1"
+http = "1.0.0"
+lazy_static = "1.4.0"
